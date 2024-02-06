@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,900");
+
+
+/* Main  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+/* Navbar  */
+header{
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 8%;
+    background: #000;
+    height: 75px;
+}
+
+.logo h2{
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav ul li{
+    font-size: 1.2rem;
+}
+
+nav ul li a{
+    color: aliceblue;
+}
+
+.menu-icons{
+    display: none;
+}
+
+.menu-icons i
+{
+    font-size: 1.5rem;
+}
+
+  .band {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    
+    @media (min-width: 30em) {
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    @media (min-width: 60em) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .card {
+    background: white;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    
+    // sets up hover state
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+      
+    &:hover {
+      top: -2px;
+      box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    }
+    
+    article {
+      padding: 20px;
+      flex: 1;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    h1 {
+      font-size: 20px;
+      margin: 0;
+      color: #333;
+    }
+    
+    p {
+      flex: 1;
+      line-height: 1.4;
+    }
+    
+    span {
+      font-size: 12px;
+      font-weight: bold;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin: 2em 0 0 0;
+    }
+    
+    .thumb {
+      padding-bottom: 60%;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+  
+  .item-1 {
+    @media (min-width: 60em) {
+      grid-column: 1 / span 2;
+      
+      h1 {
+        font-size: 24px;
+      }
+    }
+  }
+
+  @media (max-width:768px) {
+    nav ul{
+        position: absolute;
+        top: 75px;
+        left: 0;
+        right: 0;
+        background: #000;
+        flex-direction: column;
+        overflow: hidden;
+        transition: max-height 0.4s;
+    }
+
+    nav ul li:first-child{
+        padding-top: 20px;
+    }
+
+    nav ul li:last-child{
+        padding-bottom: 20px;
+    }
+
+    .menu-icons{
+        display: block;
+        cursor: pointer;
+    }
+}

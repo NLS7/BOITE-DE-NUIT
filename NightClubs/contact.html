@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- main css link -->
+    <link rel="stylesheet" href="./css/about.css">
+     <!-- font-awesome cdn Jquary -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Us</title>
+</head>
+ 
+<body>
+    <!-- navbar and header  -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>NightClubs</h2>
+            </div>
+            <ul id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-icons">
+                <i class="fa fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+ 
+    <!-- banner section  -->
+    <section class="banner" style="margin-top: 4rem; text-align: center;">
+        <h1 style="margin-bottom: 10px;">Contactez-nous</h1>
+        <p>
+            Nous sommes là pour répondre à toutes vos questions.
+        </p>
+    </section>
+
+    <!-- Contact form -->
+    <section class="contact-form">
+        <div class="form-container">
+            <h2>Your Details</h2>
+            <form action="#" method="POST">
+
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="Submit" class="contact-button" ></input>
+            </form>
+        </div>
+    </section>
+
+    <!-- Company contact info -->
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <address>
+            NightClubs Company<br>
+            123 Main Street<br>
+            City, State Zip Code<br>
+            Phone: <a href="tel:1234567890">123-456-7890</a><br>
+            Email: <a href="mailto:info@example.com">info@example.com</a>
+        </address>
+    </section>
+
+ 
+     <!-- Footer Down -->
+     <footer id="copyright" class="text-center" style="background-color: black; color: white; padding: 20px; text-align: center;">
+        <div>
+          <p>Copyright 2024 © NightClubs</p>
+        </div>
+      </footer>
+
+
+       <!-- Js file here  -->
+    <script src="./js/script.js"></script>
+</body>
+ 
+</html>
